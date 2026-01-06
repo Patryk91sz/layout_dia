@@ -1,0 +1,98 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+.header {
+  height: 893px;
+  background-color: rgb(44, 44, 44);
+  color: rgb(255, 255, 255);
+}
+.header__top {
+  height: 60px;
+  display: flex;
+  padding: 18px 20px;
+  gap: 32px;
+}
+.header__logo {
+  height: 28px;
+  width: 46px;
+}
+.header__logo-icon {
+  height: 26px;
+  width: 43px;
+}
+.header__hire-us {
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 150%;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgb(255, 255, 255);
+  margin-left: auto;
+}
+.header__strategic {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 28px 19px 48px 21px;
+  max-width: 280px;
+  margin: 0 auto;
+}
+.header__strategic-title {
+  font-weight: 600;
+  font-size: 52px;
+  line-height: 120%;
+  letter-spacing: -2px;
+  display: flex;
+  text-align: left;
+  justify-content: center;
+}
+.header__strategic-text {
+  font-family:
+    Open Sans,
+    sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+}
+.header__strategic-button {
+  height: 50px;
+  border-radius: 8px;
+  background-color: rgb(32, 96, 246);
+  color: rgb(255, 255, 255);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 100%;
+  text-align: center;
+}
+.header__intro {
+  background-image: url(../images/photos/zegarek-320.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 390px;
+  border-radius: 30px;
+}
+.header__intro-title {
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 100%;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.header__intro-text {
+  font-family: Open Sans;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+/*# sourceMappingURL=main.css.map */
