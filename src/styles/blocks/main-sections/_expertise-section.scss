@@ -1,0 +1,40 @@
+.expertise {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding: 72px 0;
+  gap: 56px;
+
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 30px;
+
+  &__title {
+    width: 250px;
+  }
+
+  &__category {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+    max-width: 265px;
+
+    &-description {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      gap: 16px;
+    }
+
+    &-text {
+      text-align: center;
+    }
+
+    &-photo {
+      width: 166px;
+      height: 166px;
+      border-radius: 16px;
+    }
+  }
+}

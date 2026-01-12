@@ -6,14 +6,423 @@
       name="viewport"
       content="width=device-width, initial-scale=1.0"
     />
-    <title>Dia</title>
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;   0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&  display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.googleapis.com"
+    />
+    <link
+      rel="preconnect"
+      href="https://fonts.gstatic.com"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,  wght@0,300..800;1,300..800&family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Air</title>
     <link
       rel="stylesheet"
       href="src/styles/main.scss"
     />
   </head>
   <body>
-    <h1>Dia</h1>
+    <header class="header">
+      <section class="header__top">
+        <button
+          class="header__logo"
+          type="button"
+        >
+          <img
+            class="header__logo-icon"
+            src="src/images/logo/Air-logo.png"
+            alt="Air agency logo"
+          />
+        </button>
+        <button
+          class="header__menu"
+          type="button"
+        >
+          <img
+            class="header__menu-icon"
+            src="src/images/menu-icon.png"
+            alt="Open menu"
+          />
+        </button>
+        <a
+          href="#"
+          class="header__hire-us"
+        >
+          Hire us
+        </a>
+      </section>
+
+      <section class="header__strategic">
+        <div class="header__strategic-text-container">
+          <h1 class="header__strategic-title">Strategic dupa Agency</h1>
+          <p class="header__strategic-text">
+            We believe in the power of bold ideas that can solve business
+            challenges.
+          </p>
+        </div>
+        <button class="header__strategic-button">Learn more</button>
+      </section>
+
+      <section class="header__intro">
+        <div class="header__slider">
+          <div class="header__arrows">
+            <button
+              class="header__arrows-arrow arrow--prev"
+              type="button"
+            >
+              <img
+                class="header__arrows-icon"
+                src="src/images/slider/black-left.png"
+                alt="Previous slide"
+              />
+            </button>
+            <button
+              class="header__arrows-arrow arrow--next"
+              type="button"
+            >
+              <img
+                class="header__arrows-icon"
+                src="src/images/slider/black-right.png"
+                alt="Next slide"
+              />
+            </button>
+          </div>
+          <div class="header__intro-description">
+            <p class="header__intro-title">INtro</p>
+            <p class="header__intro-text">
+              By the same illusion which lifts the horizon.
+            </p>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main class="main">
+      <section class="about">
+        <h3 class="about__title h3-title">Who we are</h3>
+        <p class="about__text fs22-text">
+          We embrace a strategic approach to creative ideas. We are interested
+          in people and human relationships. This is the main thing you need to
+          know about us. We believe in the power of bold ideas that can solve
+          business challenges.
+        </p>
+      </section>
+
+      <section class="expertise">
+        <h2 class="expertise__title h2-title">Our expertise</h2>
+
+        <div class="expertise__category">
+          <img
+            class="expertise__category-photo"
+            src="src/images/photos/branding-mobile.jpg"
+            alt="Branding Photo"
+          />
+          <div>
+            <h4 class="expertise__category-title h4-title">Branding</h4>
+          </div>
+          <div class="expertise__category-description">
+            <p class="expertise__category-text fs14-text">
+              We create additional value for companies, products, services as
+              well as verbal and visual ways to deliver it to the audience.
+            </p>
+          </div>
+        </div>
+        <div class="expertise__category">
+          <img
+            class="expertise__category-photo"
+            src="src/images/photos/communication_mobile.jpg"
+            alt="Communication Photo"
+          />
+          <div class="expertise__category-description">
+            <h4 class="expertise__category-title h4-title">Communication</h4>
+            <p class="expertise__category-text fs14-text">
+              We strive to create communications that can increase media
+              performance. We use everything — words, meanings, stories, art,
+              movies.
+            </p>
+          </div>
+        </div>
+
+        <div class="expertise__category">
+          <img
+            class="expertise__category-photo"
+            src="src/images/photos/strategy_mobile.jpg"
+            alt="Strategy Photo"
+          />
+          <div>
+            <h4 class="expertise__category-title h4-title">Strategy</h4>
+          </div>
+          <div class="expertise__category-description">
+            <p class="expertise__category-text fs14-text">
+              We create business growth strategies, from the moment of its birth
+              to the achievement of the necessary business indicators.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="process">
+        <div class="process__text-container">
+          <h5 class="secion__title h5-title">Services</h5>
+          <h3 class="h3-title">Air is a full service creative agency</h3>
+          <p class="fs14-text">
+            Deep analytics, strong strategy and bright creative ideas.
+          </p>
+          <p class="fs14-text">
+            We are sure that first-rate job is possible only if all three
+            components are united.
+          </p>
+        </div>
+
+        <div class="process__services">
+          <div class="process__service">
+            <div class="process__service-number-container">
+              <p class="process__service-number fs13-text">001</p>
+            </div>
+            <div class="process__service-text-container">
+              <p class="process__service-text fs13-text">
+                Brand Development
+                <br />
+                Copywriting
+                <br />
+                Logo & Webite Design
+                <br />
+                Packaging
+              </p>
+            </div>
+            <div class="process__service-learnMore-container">
+              <button
+                class="process__service-learnMore-button"
+                type="button"
+              >
+                <img
+                  class="process__service-learnMore-button-icon"
+                  src="src/images/mdi_arrow_forward.png"
+                  alt="Enter"
+                />
+              </button>
+              <p class="process__service-learnMore-text">Learn more</p>
+            </div>
+          </div>
+
+          <div class="process__service">
+            <div class="process__service-number-container">
+              <p class="process__service-number fs13-text">002</p>
+            </div>
+            <div class="process__service-text-container">
+              <p class="process__service-text fs13-text">
+                Сontent Production
+                <br />
+                Graphic Design
+                <br />
+                Video Production
+                <br />
+                Post Production
+                <br />
+              </p>
+            </div>
+            <div class="process__service-learnMore-container">
+              <button
+                class="process__service-learnMore-button"
+                type="button"
+              >
+                <img
+                  class="process__service-learnMore-button-icon"
+                  src="src/images/mdi_arrow_forward.png"
+                  alt="Enter"
+                />
+              </button>
+              <p class="process__service-learnMore-text">Learn more</p>
+            </div>
+          </div>
+
+          <div class="process__service">
+            <div class="process__service-number-container">
+              <p class="process__service-number fs13-text">003</p>
+            </div>
+            <div class="process__service-text-container">
+              <p class="process__service-text fs13-text">
+                Marketing Strategy
+                <br />
+                Email Marketing
+                <br />
+                Paid Advertising
+                <br />
+                Blog Content & SEO
+              </p>
+            </div>
+            <div class="process__service-learnMore-container">
+              <button
+                class="process__service-learnMore-button"
+                type="button"
+              >
+                <img
+                  class="process__service-learnMore-button-icon"
+                  src="src/images/mdi_arrow_forward.png"
+                  alt="Enter"
+                />
+              </button>
+              <p class="process__service-learnMore-text">Learn more</p>
+            </div>
+          </div>
+
+          <div class="process__service">
+            <div class="process__service-number-container">
+              <p class="process__service-number fs13-text">004</p>
+            </div>
+            <div class="process__service-text-container">
+              <p class="process__service-text fs13-text">
+                Marketing Strategy
+                <br />
+                Email Marketing
+                <br />
+                Paid Advertising
+                <br />
+                Blog Content & SEO
+              </p>
+            </div>
+            <div class="process__service-learnMore-container">
+              <button
+                class="process__service-learnMore-button"
+                type="button"
+              >
+                <img
+                  class="process__service-learnMore-button-icon"
+                  src="src/images/mdi_arrow_forward.png"
+                  alt="Enter"
+                />
+              </button>
+              <p class="process__service-learnMore-text">Learn more</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials">
+        <div class="testimonials__header">
+          <h5 class="section__title h5-title">Testimonials</h5>
+          <h3 class="testimonials__title h3-title">What people say</h3>
+        </div>
+
+        <div class="testimonials__cards">
+          <div class="testimonial__card">
+            <div class="testimonial__card-frame-container">
+              <img
+                class="testimonial__card-frame testimonial__card-frameL"
+                src="./src/images/testimonials/blueP.svg"
+                alt="Edge"
+              />
+              <div class="testimonial__card-photo-container">
+                <img
+                  class="testimonial__card-photo"
+                  src="./src/images/photos/testimonials1-mobile.jpg"
+                  alt="Face Photo"
+                />
+              </div>
+              <img
+                class="testimonial__card-frame testimonial__card-frameR"
+                src="./src/images/recktangle/Rectangle2_mobile.png"
+                alt="Edge"
+              />
+            </div>
+            <div class="testimonial__card-text-container">
+              <div class="testimonial__card-quotes-container"><img src="./src/images/testimonials/quotes.png" alt=",,"></div>
+              <p class="testimonial__card-text fs13-text">
+                AIR’s ideas are refreshing and out of the box. Authentic team
+                that focuses on the important path of the brand.
+              </p>
+            </div>
+            <div class="testimonial__card-name-container">
+              <p class="testimonial__card-name fs13-text">Tal Gilad</p>
+              <p class="testimonial__card-work h5-title">Teach for America</p>
+            </div>
+          </div>
+
+          <div class="testimonial__card">
+            <div class="testimonial__card-frame-container">
+              <img
+                class="testimonial__card-frame testimonial__card-frameL"
+                src="./src/images/recktangle/Rectangle1_mobile.png"
+                alt="Edge"
+              />
+              <div class="testimonial__card-photo-container">
+                <img
+                  class="testimonial__card-photo"
+                  src="./src/images/photos/testimonials2-mobile.jpg"
+                  alt="Face Photo"
+                />
+              </div>
+              <img
+                class="testimonial__card-frame testimonial__card-frameR"
+                src="./src/images/recktangle/Rectangle2_mobile.png"
+                alt="Edge"
+              />
+            </div>
+            <div class="testimonial__card-text-container">
+              <div class="testimonial__card-quotes-container"><img src="./src/images/testimonials/quotes.png" alt=",,"></div>
+              <p class="testimonial__card-text fs13-text">
+                AIR is an exceptional agency that leads with creative talent,
+                first-class account servicing.
+              </p>
+            </div>
+            <div class="testimonial__card-name-container">
+              <p class="testimonial__card-name fs13-text">Azadeh Hawkins</p>
+              <p class="testimonial__card-work h5-title">Hawkins Consulting</p>
+            </div>
+          </div>
+
+          <div class="testimonial__card">
+            <div class="testimonial__card-frame-container">
+              <img
+                class="testimonial__card-frame testimonial__card-frameL"
+                src="./src/images/recktangle/Rectangle2_mobile.png"
+                alt="Edge"
+              />
+              <div class="testimonial__card-photo-container">
+                <img
+                  class="testimonial__card-photo"
+                  src="./src/images/photos/testimonials3-mobile.jpg"
+                  alt="Face Photo"
+                />
+              </div>
+              <img
+                class="testimonial__card-frame testimonial__card-frameR"
+                src="./src/images/recktangle/Rectangle1_mobile.png"
+                alt="Edge"
+              />
+            </div>
+            <div class="testimonial__card-text-container">
+              <div class="testimonial__card-quotes-container"><img src="./src/images/testimonials/quotes.png" alt=",,"></div>
+              <p class="testimonial__card-text fs13-text">
+                AIR raises the agency bar to stratospheric heights on both
+                creative output and client service.
+              </p>
+            </div>
+            <div class="testimonial__card-name-container">
+              <p class="testimonial__card-name fs13-text">Hawkins Consulting</p>
+              <p class="testimonial__card-work h5-title">Hulu</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
     <script src="src/scripts/main.js"></script>
   </body>
 </html>
