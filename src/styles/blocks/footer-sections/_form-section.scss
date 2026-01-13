@@ -1,0 +1,42 @@
+.send-a-msg {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  padding-top: 72px;
+  margin: 0 auto;
+
+  &__title {
+    color: rgba(255, 255, 255, 1);
+    padding-bottom: 8px;
+  }
+
+  &__input {
+    height: 41px;
+    color: rgba(255, 255, 255, 1);
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 1);
+    width: 280px;
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 100%;
+    letter-spacing: 3px;
+    text-align: left;
+
+    &::placeholder {
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  &__button {
+    width: 280px;
+    height: 56px;
+    background-color: rgba(20, 78, 212, 1);
+    border-radius: 8px;
+    padding: 16px 8px;
+    border: none;
+  }
+}

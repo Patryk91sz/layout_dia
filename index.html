@@ -39,7 +39,7 @@
     />
   </head>
   <body>
-    <header class="header">
+    <header class="header" id="home">
       <section class="header__top">
         <button
           class="header__logo"
@@ -51,8 +51,8 @@
             alt="Air agency logo"
           />
         </button>
-        <button
-          class="header__menu"
+        <a
+          class="header__menu" href="#footer-menu"
           type="button"
         >
           <img
@@ -60,7 +60,7 @@
             src="src/images/menu-icon.png"
             alt="Open menu"
           />
-        </button>
+        </a>
         <a
           href="#"
           class="header__hire-us"
@@ -115,7 +115,7 @@
     </header>
 
     <main class="main">
-      <section class="about">
+      <section class="about" id="about">
         <h3 class="about__title h3-title">Who we are</h3>
         <p class="about__text fs22-text">
           We embrace a strategic approach to creative ideas. We are interested
@@ -125,7 +125,7 @@
         </p>
       </section>
 
-      <section class="expertise">
+      <section class="expertise" id="work">
         <h2 class="expertise__title h2-title">Our expertise</h2>
 
         <div class="expertise__category">
@@ -178,7 +178,7 @@
         </div>
       </section>
 
-      <section class="process">
+      <section class="process" id="services">
         <div class="process__text-container">
           <h5 class="secion__title h5-title">Services</h5>
           <h3 class="h3-title">Air is a full service creative agency</h3>
@@ -422,7 +422,82 @@
           </div>
         </div>
       </section>
+
+      <section class="vpr">
+        <div class="vpr__text-container">
+          <h2 class="h2-title">Vision, Passion, Results</h2>
+          <p class="fs22-text">We are sure that first-rate job is possible only if all three components are united.</p>
+          <button class="vpr__apply-button button-text">Apply</button>
+        </div>
+      </section>
+      <div class="space"></div>
     </main>
+
+    <footer class="footer">
+
+      <section class="send-a-msg" id="contact">
+        <form class="send-a-msg" action="URL"
+        method="post">
+          <h3 class="send-a-msg__title h3-title">Send us  a message</h3>
+          <input class="send-a-msg__email send-a-msg__input"
+          type="email" placeholder="email@exa">
+          <input class="send-a-msg__name send-a-msg__input" placeholder="Your name">
+          <textarea class="send-a-msg__textarea send-a-msg__input" placeholder="Your message"></textarea>
+          <button class="send-a-msg__button button-text">Send</button>
+        </form>
+      </section>
+
+      <section class="contact-us">
+        <h3 class="contact-us__title h3-title">Contact us</h3>
+        <div class="contact-us__item">
+          <p class="contact-us__label">Call us</p>
+          <p class="contact-us__value">654 321 987</p>
+        </div>
+        <div class="contact-us__item">
+          <p class="contact-us__label">Visit us</p>
+          <p>2905 West Drive, Buffalo Grove</p>
+        </div>
+        <div class="contact-us__item contact-us__item-social">
+          <p class="contact-us__label">our socials</p>
+          <div class="contact-us__socials">
+            <div class="contact-us__socials-container">
+              <img src="./src/images/footer/facebook-logo.svg" alt="Facebook">
+            </div>
+            <div class="contact-us__socials-container">
+              <img src="./src/images/footer/twitter-logo.svg" alt="Twitter">
+            </div>
+            <div class="contact-us__socials-container">
+              <img src="./src/images/footer/instagram-logo.svg" alt="Instagram">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="footer-menu" id="footer-menu">
+        <div class="footer-menu__logo-container">
+          <img class="footer-menu__logo" src="./src/images/footer/air-logo.svg"
+          alt="Logo">
+        </div>
+
+        <ul class="footer-menu__list">
+          <li class="footer-menu__list-item">
+            <a class="footer-menu__link" href="#about">About us</a>
+          </li>
+          <li class="footer-menu__list-item">
+            <a class="footer-menu__link" href="#home">Home</a>
+          </li>
+          <li class="footer-menu__list-item">
+            <a class="footer-menu__link" href="#work">Work</a>
+          </li>
+          <li class="footer-menu__list-item">
+            <a class="footer-menu__link" href="#services">Services</a>
+          </li>
+          <li class="footer-menu__list-item">
+            <a class="footer-menu__link" href="#contact">Contact Us</a>
+          </li>
+        </ul>
+      </section>
+    </footer>
     <script src="src/scripts/main.js"></script>
   </body>
 </html>

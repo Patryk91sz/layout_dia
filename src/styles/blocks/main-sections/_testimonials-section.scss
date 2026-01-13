@@ -35,6 +35,7 @@
     margin: 0 auto;
     background-color: #fff;
     border-radius: 16px;
+    gap: 24px;
 
     &-frame-container {
       position: relative;
@@ -80,15 +81,16 @@
 
     &-text-container {
       width: 196px;
-      height: 112px;
+      height: 80px;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 8px;
     }
 
     &-text {
       color: rgba(108, 120, 139, 1);
       text-align: center;
+      line-height: 1.2;
     }
 
     &-quotes-container {
@@ -99,7 +101,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 4px;
+      gap: 15px;
     }
   }
 }

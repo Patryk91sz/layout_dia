@@ -1,0 +1,38 @@
+.footer-menu {
+  color: #fff;
+  width: 280px;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 49px;
+  margin: 0 auto;
+
+  &__footer-menu__logo {
+    width: 44px;
+    height: 25px;
+
+    &-container {
+      width: 46px;
+      height: 28px;
+    }
+  }
+
+  &__list {
+    width: 115px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    list-style: none;
+  }
+
+  &__link {
+    font-family: Poppins, sans-serif;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 150%;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: inherit;
+  }
+}
