@@ -1,3 +1,5 @@
+@use '../../utils/mixins' as *;
+
 .about {
   display: flex;
   flex-direction: column;
@@ -5,6 +7,10 @@
   align-items: center;
   max-width: 275px;
   margin: 0 auto;
-  padding-top: 330px;
   border-radius: 30px;
+
+  @include tablet {
+    gap: 16px;
+    max-width: 558px;
+  }
 }

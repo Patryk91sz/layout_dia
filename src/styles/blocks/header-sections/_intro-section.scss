@@ -1,3 +1,5 @@
+@use '../../utils/mixins' as *;
+
 .header {
   &__intro {
     position: relative;
@@ -6,11 +8,11 @@
     background-repeat: no-repeat;
     background-position: center;
 
-    background-image: url(../images/photos/zegarek-320.jpg);
+    background-image: url(../images/photos/header/zegarek-320.jpg);
     background-size: cover;
 
     height: auto;
-    min-height: 390px;
+    min-height: 320px;
     border-radius: 30px;
 
     width: 100%;
@@ -20,6 +22,11 @@
     flex-direction: column;
     justify-content: flex-end;
     text-align: left;
+
+    @include tablet {
+      background-image: url(../images/header/zegarek-640.jpg);
+      min-height: 390px;
+    }
 
     &-description {
       height: 68px;
@@ -58,6 +65,10 @@
     align-items: flex-start;
 
     box-sizing: border-box;
+
+    @include tablet {
+      padding: 0 41px;
+    }
   }
 
   &__arrows {
@@ -65,6 +76,9 @@
     gap: 16px;
 
     &-arrow {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       height: 32px;
       width: 32px;
       background-color: rgba(255, 255, 255, 1);

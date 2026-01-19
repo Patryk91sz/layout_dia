@@ -1,7 +1,15 @@
+@use '../../utils/mixins' as *;
+
 .testimonials {
   display: flex;
   flex-direction: column;
   padding: 0 20px;
+
+  @include tablet {
+    padding: 25px 0 0;
+    width: 558px;
+    margin: 0 auto;
+  }
 
   &__header {
     width: 255px;
@@ -10,17 +18,33 @@
     margin: 0 auto;
     gap: 16px;
     padding-bottom: 24px;
+
+    @include tablet {
+      width: 362px;
+      align-self: flex-start;
+      text-align: left;
+      margin: 0;
+    }
   }
 
   &__title {
     align-self: center;
-    margin: 0 auto;
+
+    @include tablet {
+      width: 180px;
+      align-self: flex-start;
+      text-align: left;
+    }
   }
 
   &__cards {
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    @include tablet {
+      gap: 30px;
+    }
   }
 }
 
@@ -33,20 +57,31 @@
     justify-content: center;
     align-items: center;
     margin: 0 auto;
-    background-color: #fff;
     border-radius: 16px;
-    gap: 24px;
+    gap: 16px;
+
+    box-shadow: 0 9px 18px 0 rgba(37, 41, 49, 0.2);
+    background-color: rgba(255, 255, 255, 1);
+
+    @include tablet {
+      width: 558px;
+    }
 
     &-frame-container {
       position: relative;
       width: 196px;
       height: 196px;
       display: flex;
+
+      @include tablet {
+        width: 250px;
+        height: 250px;
+      }
     }
 
     &-frame {
       position: absolute;
-      width: 80px;
+      width: 110px;
       height: 54;
       z-index: 1;
     }
@@ -70,6 +105,11 @@
       left: 50%;
       transform: translate(-50%, -50%);
       z-index: 2;
+
+      @include tablet {
+        width: 140px;
+        height: 140px;
+      }
     }
 
     &-photo {
@@ -84,7 +124,13 @@
       height: 80px;
       display: flex;
       flex-direction: column;
-      gap: 8px;
+      gap: 11px;
+      margin: 8px 0;
+
+      @include tablet {
+        width: 365px;
+        gap: 19px;
+      }
     }
 
     &-text {
@@ -101,7 +147,7 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      gap: 15px;
+      gap: 4px;
     }
   }
 }

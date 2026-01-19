@@ -40,30 +40,29 @@
   </head>
   <body>
     <header class="header" id="home">
-      <section class="header__top">
-        <button
-          class="header__logo"
+      <section class="top">
+        <div
+          class="top__logo"
           type="button"
         >
           <img
-            class="header__logo-icon"
+            class="top__logo-icon"
             src="src/images/logo/Air-logo.png"
             alt="Air agency logo"
           />
-        </button>
+        </div>
         <a
-          class="header__menu" href="#footer-menu"
-          type="button"
+          class="top__menu" href="#footer-menu"
         >
           <img
-            class="header__menu-icon"
+            class="top__menu-icon"
             src="src/images/menu-icon.png"
             alt="Open menu"
           />
         </a>
         <a
           href="#hire"
-          class="header__hire-us"
+          class="top__hire-us"
         >
           Hire us
         </a>
@@ -71,13 +70,14 @@
 
       <section class="header__strategic">
         <div class="header__strategic-text-container">
-          <h1 class="header__strategic-title">Strategic dupa Agency</h1>
+          <h1 class="header__strategic-title">Strategic Agency</h1>
           <p class="header__strategic-text">
             We believe in the power of bold ideas that can solve business
             challenges.
           </p>
         </div>
-        <button class="header__strategic-button">Learn more</button>
+        <a href="#work" class="header__strategic-button">Learn more</a>
+
       </section>
 
       <section class="header__intro">
@@ -114,7 +114,9 @@
       </section>
     </header>
 
+    <div class="header__space"></div>
     <main class="main">
+
       <section class="about" id="about">
         <h3 class="about__title h3-title">Who we are</h3>
         <p class="about__text fs22-text">
@@ -170,7 +172,7 @@
             <h4 class="expertise__category-title h4-title">Strategy</h4>
           </div>
           <div class="expertise__category-description">
-            <p class="expertise__category-text fs14-text">
+            <p class="expertise__category-text expertise__category-text-strategy fs14-text">
               We create business growth strategies, from the moment of its birth
               to the achievement of the necessary business indicators.
             </p>
@@ -192,7 +194,7 @@
         </div>
 
         <div class="process__services">
-          <div class="process__service">
+          <div class="process__service process__service-001">
             <div class="process__service-number-container">
               <p class="process__service-number fs13-text">001</p>
             </div>
@@ -208,8 +210,7 @@
               </p>
             </div>
             <div class="process__service-learnMore-container">
-              <button
-                class="process__service-learnMore-button"
+              <a href="#work" class="process__service-learnMore-button"
                 type="button"
               >
                 <img
@@ -217,12 +218,12 @@
                   src="src/images/mdi_arrow_forward.png"
                   alt="Enter"
                 />
-              </button>
+              </a>
               <p class="process__service-learnMore-text">Learn more</p>
             </div>
           </div>
 
-          <div class="process__service">
+          <div class="process__service process__service-002">
             <div class="process__service-number-container">
               <p class="process__service-number fs13-text">002</p>
             </div>
@@ -239,7 +240,7 @@
               </p>
             </div>
             <div class="process__service-learnMore-container">
-              <button
+              <a href="#work"
                 class="process__service-learnMore-button"
                 type="button"
               >
@@ -248,12 +249,12 @@
                   src="src/images/mdi_arrow_forward.png"
                   alt="Enter"
                 />
-              </button>
+              </a>
               <p class="process__service-learnMore-text">Learn more</p>
             </div>
           </div>
 
-          <div class="process__service">
+          <div class="process__service process__service-003">
             <div class="process__service-number-container">
               <p class="process__service-number fs13-text">003</p>
             </div>
@@ -269,7 +270,7 @@
               </p>
             </div>
             <div class="process__service-learnMore-container">
-              <button
+              <a href="#work"
                 class="process__service-learnMore-button"
                 type="button"
               >
@@ -278,12 +279,12 @@
                   src="src/images/mdi_arrow_forward.png"
                   alt="Enter"
                 />
-              </button>
+              </a>
               <p class="process__service-learnMore-text">Learn more</p>
             </div>
           </div>
 
-          <div class="process__service">
+          <div class="process__service process__service-004">
             <div class="process__service-number-container">
               <p class="process__service-number fs13-text">004</p>
             </div>
@@ -299,7 +300,7 @@
               </p>
             </div>
             <div class="process__service-learnMore-container">
-              <button
+              <a href="#work"
                 class="process__service-learnMore-button"
                 type="button"
               >
@@ -308,7 +309,7 @@
                   src="src/images/mdi_arrow_forward.png"
                   alt="Enter"
                 />
-              </button>
+              </a>
               <p class="process__service-learnMore-text">Learn more</p>
             </div>
           </div>
@@ -330,11 +331,14 @@
                 alt="Edge"
               />
               <div class="testimonial__card-photo-container">
-                <img
-                  class="testimonial__card-photo"
-                  src="./src/images/photos/testimonials1-mobile.jpg"
-                  alt="Face Photo"
-                />
+                <picture class="testimonial__card-photo-container">
+                  <source media="(min-width: 640px)" srcset="./src/images/photos/main/testimonials1-640.jpg">
+                  <img
+                    class="testimonial__card-photo"
+                    src="./src/images/photos/main/testimonials1-mobile.jpg"
+                    alt="Face Photo"
+                  />
+                </picture>
               </div>
               <img
                 class="testimonial__card-frame testimonial__card-frameR"
@@ -363,11 +367,14 @@
                 alt="Edge"
               />
               <div class="testimonial__card-photo-container">
-                <img
-                  class="testimonial__card-photo"
-                  src="./src/images/photos/testimonials2-mobile.jpg"
-                  alt="Face Photo"
-                />
+                <picture>
+                  <source media="(min-width: 640px)" srcset="./src/images/photos/main/testimonials2-640.jpg">
+                  <img
+                    class="testimonial__card-photo"
+                    src="./src/images/photos/main/testimonials2-mobile.jpg"
+                    alt="Face Photo"
+                  />
+                </picture>
               </div>
               <img
                 class="testimonial__card-frame testimonial__card-frameR"
@@ -396,11 +403,14 @@
                 alt="Edge"
               />
               <div class="testimonial__card-photo-container">
-                <img
-                  class="testimonial__card-photo"
-                  src="./src/images/photos/testimonials3-mobile.jpg"
-                  alt="Face Photo"
-                />
+                <picture>
+                  <source media="(min-width: 640px)" srcset="./src/images/photos/main/testimonials3-640.jpg">
+                  <img
+                    class="testimonial__card-photo"
+                    src="./src/images/photos/main/testimonials3-mobile.jpg"
+                    alt="Face Photo"
+                  />
+                </picture>
               </div>
               <img
                 class="testimonial__card-frame testimonial__card-frameR"
@@ -425,25 +435,28 @@
 
       <section class="vpr" id="hire">
         <div class="vpr__text-container">
-          <h2 class="h2-title">Vision, Passion, Results</h2>
+          <h2 class="vpr__title h2-title">Vision, Passion, Results</h2>
           <p class="fs22-text">We are sure that first-rate job is possible only if all three components are united.</p>
-          <button type="submit" class="vpr__apply-button button-text">Apply</button>
+          <a href="#contact" type="submit"
+          class="vpr__apply-button button-text">Apply</a>
         </div>
       </section>
-      <div class="space"></div>
+      <div class="footer__space"></div>
     </main>
 
     <footer class="footer">
 
       <section class="send-a-msg" id="contact">
-        <form class="send-a-msg" action="URL"
-        method="post">
+        <form class="send-a-msg">
           <h3 class="send-a-msg__title h3-title">Send us  a message</h3>
           <input class="send-a-msg__email send-a-msg__input"
-          type="email" placeholder="email@exa">
-          <input class="send-a-msg__name send-a-msg__input" placeholder="Your name">
-          <textarea class="send-a-msg__textarea send-a-msg__input" placeholder="Your message"></textarea>
-          <button class="send-a-msg__button button-text">Send</button>
+          type="email" required
+          placeholder="email@exa">
+          <input class="send-a-msg__name send-a-msg__input" required
+          placeholder="Your name">
+          <textarea class="send-a-msg__textarea send-a-msg__input" required
+          placeholder="Your message"></textarea>
+          <button type="submit" class="send-a-msg__button button-text">Send</button>
         </form>
       </section>
 
@@ -455,7 +468,7 @@
         </div>
         <div class="contact-us__item">
           <p class="contact-us__label">Visit us</p>
-          <p>2905 West Drive, Buffalo Grove</p>
+          <p class="contact-us__value">2905 West Drive, Buffalo Grove</p>
         </div>
         <div class="contact-us__item contact-us__item-social">
           <p class="contact-us__label">our socials</p>

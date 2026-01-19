@@ -1,5 +1,6 @@
 @use './utils/reset';
 @use './utils/titles';
+@use './utils/mixins' as *;
 
 @use './blocks/header-sections/header';
 @use './blocks/header-sections/top-section';

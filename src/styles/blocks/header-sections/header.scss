@@ -1,7 +1,15 @@
+@use '../../utils/mixins' as *;
+
 .header {
   height: 730px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
   color: rgba(255, 255, 255, 1);
-  margin: 0 auto;
   background-color: rgba(44, 44, 44, 1);
-  padding-bottom: 120px;
+
+  @include tablet {
+    gap: 56px;
+    height: 900px;
+  }
 }
