@@ -1,18 +1,33 @@
 @use '../../utils/mixins' as *;
 
 .footer-menu {
-  color: #fff;
-  width: 280px;
   display: flex;
-  align-items: flex-start;
   flex-direction: column;
   gap: 49px;
+  align-items: flex-start;
+
+  width: 280px;
   margin: 0 auto;
 
+  color: #fff;
+
   @include tablet {
-    gap: 25px;
-    grid-column: 1 / 3;
-    grid-row: 3/ 3;
+    grid-column: 1 / 6;
+    grid-row: 3 / 3;
+    gap: 30px;
+    justify-self: center;
+
+    width: 520px;
+    margin-top: 19px;
+  }
+
+  @include s-desktop {
+    grid-row: 2 / 2;
+    flex-direction: row;
+    gap: 219px;
+
+    width: 920px;
+    margin-top: 60px;
   }
 
   &__footer-menu__logo {
@@ -26,27 +41,30 @@
   }
 
   &__list {
-    width: 115px;
     display: flex;
     flex-direction: column;
     gap: 24px;
+
+    width: 115px;
+
     list-style: none;
 
     @include tablet {
-      width: 600px;
       flex-direction: row;
       gap: 40px;
+      width: 560px;
+    }
+
+    @include s-desktop {
+      gap: 64px;
+      width: auto;
     }
   }
 
   &__link {
-    font-family: Poppins, sans-serif;
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 150%;
-    letter-spacing: 3px;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: inherit;
+    @include s-desktop {
+      display: inline-block;
+      width: auto;
+    }
   }
 }

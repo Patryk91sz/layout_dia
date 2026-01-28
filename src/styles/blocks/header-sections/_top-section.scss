@@ -3,20 +3,29 @@
 .top {
   display: flex;
   gap: 32px;
+
+  width: 100%;
   height: 60px;
   padding: 18px 20px;
 
   @include tablet {
     padding: 20px 41px;
-    max-width: 1020px;
+  }
+
+  @include s-desktop {
+    grid-column: 1 / -1;
+    gap: 110px;
+    padding: 48px 54px;
   }
 
   &__logo {
+    justify-content: flex-start;
+
     width: 45px;
     height: 26px;
-    background-color: transparent;
     border: none;
-    justify-content: flex-start;
+
+    background-color: transparent;
 
     &-icon {
       width: 43px;
@@ -25,37 +34,141 @@
   }
 
   &__menu {
-    width: 24px;
-    height: 24px;
-    border: none;
-    background-color: transparent;
+    position: fixed; // esperyment bylo tylo: display none
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    transform: translateX(-100%);
+
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+
+    height: 100vh;
+    padding: 30px;
+
+    color: rgba(255, 255, 255, 1);
+
+    background-color: rgba(32, 96, 246, 1);
+
+    transition: transform 0.3s ease;
+
+    @include s-desktop {
+      position: static;
+      transform: translateX(0%);
+
+      height: auto;
+      padding: 0;
+
+      color: rgba(0, 0, 0, 1);
+
+      background-color: transparent;
+    }
+
+    &:target {
+      transform: translateX(0%);
+    }
+
+    &-logo {
+      width: 45px;
+      height: 26px;
+      border: none;
+      background-color: transparent;
+
+      &-icon {
+        width: 43px;
+        height: 26px;
+      }
+    }
+
+    &-nav {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-icon {
+      width: 24px;
+      height: 24px;
+      border: none;
+      background-color: transparent;
+
+      @include s-desktop {
+        display: none;
+      }
+    }
+
+    &-list {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      justify-content: center;
+
+      width: auto;
+      height: auto;
+
+      list-style: none;
+
+      @include s-desktop {
+        flex-direction: row;
+        gap: 48px;
+        justify-content: center;
+        width: 580px;
+      }
+    }
+
+    &-close-button {
+      position: relative;
+      top: -60px;
+
+      align-self: flex-start;
+
+      width: 16px;
+      height: 16px;
+      border: none;
+
+      background-color: transparent;
+    }
+
+    &-close-button-icon {
+      width: 24px;
+      height: 24px;
+    }
+
+    @include s-desktop {
+      &-item {
+        display: none;
+      }
+    }
   }
 
   &__hire-us {
-    font-weight: 700;
-    font-size: 13px;
-    line-height: 150%;
-    letter-spacing: 3px;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: none;
-    color: rgba(255, 255, 255, 1);
-    margin-left: auto;
-
     position: relative;
 
-    @include tablet {
-      grid-column: 6 /6;
-    }
+    width: 75px;
+    height: 20px;
+    margin-left: auto;
+
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 150%;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 3px;
 
     &::after {
       content: '';
+
       position: absolute;
-      left: 0;
       right: 0;
-      height: 2px;
-      background-color: rgba(32, 96, 246, 1);
       bottom: -8px;
+      left: 0;
+
+      height: 2px;
+
+      background-color: rgba(32, 96, 246, 1);
     }
   }
 }

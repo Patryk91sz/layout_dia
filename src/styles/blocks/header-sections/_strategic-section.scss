@@ -4,75 +4,106 @@
   &__strategic {
     display: flex;
     flex-direction: column;
+    gap: 72px;
     align-items: flex-start;
     justify-content: center;
-    gap: 72px;
-    margin: 0 auto;
+
     width: 280px;
-    padding-bottom: 48px;
+    margin: 0 auto;
 
     @include tablet {
-      width: 558px;
       gap: 56px;
+      width: 558px;
       padding-bottom: 91px;
     }
 
+    @include s-desktop {
+      grid-column: 1 / 4;
+      gap: 83px;
+      padding-left: 54px;
+    }
+
     &-title {
-      font-weight: 600;
-      font-size: 52px;
-      line-height: 120%;
-      letter-spacing: -2px;
       display: flex;
+
       width: 280px;
 
+      font-size: 52px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -2px;
+
       @include tablet {
-        font-size: 69px;
-        width: 100%;
         justify-content: flex-start;
+        width: 100%;
+        font-size: 69px;
+      }
+
+      @include s-desktop {
+        // margin-top: 110px;
+        width: 400px;
       }
     }
 
     &-text {
-      font-family: 'Open Sans', sans-serif;
-      font-weight: 400;
-      font-size: 18px;
-      line-height: 150%;
-      width: 280px;
-      text-align: left;
       align-self: flex-start;
+
+      width: 280px;
+
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: left;
 
       @include tablet {
         width: 362px;
       }
 
+      @include s-desktop {
+        font-size: 19px;
+      }
+
       &-container {
-        width: 280px;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
         gap: 32px;
+        align-items: flex-start;
+
+        width: 280px;
 
         @include tablet {
-          width: 558px;
+          gap: 24px;
           justify-content: flex-start;
+          width: 558px;
+        }
+
+        @include s-desktop {
+          gap: 32px;
+          justify-content: center;
+          justify-self: center;
+          height: 355px;
         }
       }
     }
 
     &-button {
-      height: 50px;
-      border-radius: 8px;
-      background-color: rgba(32, 96, 246, 1);
-      color: rgba(255, 255, 255, 1);
-      border: none;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 15px;
-      line-height: 100%;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+
       width: 280px;
+      height: 50px;
+      border: none;
+      border-radius: 8px;
+
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 100%;
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+
+      background-color: rgba(32, 96, 246, 1);
 
       @include tablet {
         align-self: flex-start;

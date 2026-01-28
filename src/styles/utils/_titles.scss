@@ -5,8 +5,8 @@
   font-size: 44px;
   font-weight: 600;
   line-height: 120%;
-  text-align: center;
   color: rgba(37, 55, 87, 1);
+  text-align: center;
   vertical-align: middle;
 
   @include tablet {
@@ -76,10 +76,29 @@
 }
 
 .button-text {
-  color: rgba(255, 255, 255, 1);
   font-family: Poppins, sans-serif;
-  font-weight: 600;
   font-size: 15px;
+  font-weight: 600;
   line-height: 100%;
+  color: rgba(255, 255, 255, 1);
   text-align: center;
+}
+
+.menu-link {
+  font-family: Poppins, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 150%;
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+.top__nav-link {
+  font-size: 25px;
+
+  @include s-desktop {
+    font-size: 13px;
+  }
 }
