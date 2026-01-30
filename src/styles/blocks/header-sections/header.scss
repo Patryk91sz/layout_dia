@@ -7,7 +7,7 @@
   flex-direction: column;
   gap: 48px;
 
-  height: 834px;
+  height: 824px;
 
   color: rgba(255, 255, 255, 1);
 
@@ -29,7 +29,7 @@
 
   @include tablet {
     gap: 56px;
-    height: 920px;
+    height: 906px;
   }
 
   @include s-desktop {
@@ -55,5 +55,10 @@
 
       background-color: rgba(242, 246, 250, 1);
     }
+  }
+
+  @include desktop-1600 {
+    gap: 20px;
+    height: 786px;
   }
 }

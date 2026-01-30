@@ -1,3 +1,5 @@
+@use 'mixins' as *;
+
 *,
 *::before,
 *::after {
@@ -12,4 +14,13 @@ html {
 
 body {
   font-family: Poppins, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  @include s-desktop {
+    &:hover {
+      color: #688fe9;
+    }
+  }
 }

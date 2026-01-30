@@ -8,19 +8,22 @@
     align-items: flex-start;
     justify-content: center;
 
-    width: 280px;
+    width: auto;
     margin: 0 auto;
 
     @include tablet {
       gap: 56px;
-      width: 558px;
       padding-bottom: 91px;
     }
 
     @include s-desktop {
-      grid-column: 1 / 4;
+      grid-column: 1 / 5;
       gap: 83px;
       padding-left: 54px;
+    }
+
+    @include desktop-1600 {
+      padding-left: 227px;
     }
 
     &-title {
@@ -75,7 +78,7 @@
         @include tablet {
           gap: 24px;
           justify-content: flex-start;
-          width: 558px;
+          width: auto;
         }
 
         @include s-desktop {
