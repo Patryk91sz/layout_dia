@@ -17,21 +17,15 @@
 
     width: 558px;
     margin: 0 auto;
+    padding: 0;
     padding: 148px 0;
   }
 
   @include s-desktop {
-    flex-direction: row;
-    gap: 176px;
-    width: 920px;
-    height: 820px;
-    padding: 251px 0 0;
-  }
-
-  @include desktop-1600 {
-    width: 1150px;
-    gap: 226px;
-    height: 840px;
+    gap: 0;
+    width: 918px;
+    height: 940px;
+    padding: 251px 0 151px;
   }
 
   &__services {
@@ -47,15 +41,10 @@
     }
 
     @include s-desktop {
-      transform: translateY(-3%);
+      transform: translateY(-50%);
       gap: 20px;
+      align-self: flex-end;
       width: 458px;
-      height: 500px;
-    }
-
-    @include desktop-1600 {
-      width: 558px;
-      gap: 30px;
     }
   }
 
@@ -126,11 +115,6 @@
           box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
         }
       }
-    }
-
-    @include desktop-1600 {
-      width: 264px;
-      height: 264px;
     }
 
     &-number-container {

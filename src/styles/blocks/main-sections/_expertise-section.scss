@@ -84,7 +84,7 @@
       flex-direction: column;
       gap: 16px;
 
-      width: 265px;
+      width: 214px;
 
       text-align: center;
 
@@ -93,12 +93,8 @@
       }
 
       @include s-desktop {
-        width: 210px;
+        width: 214px;
         min-height: 214px;
-      }
-
-      @include desktop-1600 {
-        width: 253px;
       }
     }
 
@@ -113,10 +109,6 @@
 
         @include s-desktop {
           width: 190px;
-        }
-
-        @include desktop-1600 {
-          width: 250px;
         }
       }
     }
