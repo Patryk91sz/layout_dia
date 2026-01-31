@@ -1,0 +1,117 @@
+@use '../../utils/mixins' as *;
+
+.header {
+  &__strategic {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    align-items: flex-start;
+    justify-content: center;
+
+    width: auto;
+    margin: 0 auto;
+
+    @include tablet {
+      gap: 56px;
+      padding-bottom: 91px;
+    }
+
+    @include s-desktop {
+      grid-column: 1 / 5;
+      gap: 83px;
+      padding-left: 54px;
+    }
+
+    @include desktop-1600 {
+      padding-left: 227px;
+    }
+
+    &-title {
+      display: flex;
+
+      width: 280px;
+
+      font-size: 52px;
+      font-weight: 600;
+      line-height: 120%;
+      letter-spacing: -2px;
+
+      @include tablet {
+        justify-content: flex-start;
+        width: 100%;
+        font-size: 69px;
+      }
+
+      @include s-desktop {
+        // margin-top: 110px;
+        width: 400px;
+      }
+    }
+
+    &-text {
+      align-self: flex-start;
+
+      width: 280px;
+
+      font-family: 'Open Sans', sans-serif;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 150%;
+      text-align: left;
+
+      @include tablet {
+        width: 362px;
+      }
+
+      @include s-desktop {
+        font-size: 19px;
+      }
+
+      &-container {
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+        align-items: flex-start;
+
+        width: 280px;
+
+        @include tablet {
+          gap: 24px;
+          justify-content: flex-start;
+          width: auto;
+        }
+
+        @include s-desktop {
+          gap: 32px;
+          justify-content: center;
+          justify-self: center;
+          height: 355px;
+        }
+      }
+    }
+
+    &-button {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      width: 280px;
+      height: 50px;
+      border: none;
+      border-radius: 8px;
+
+      font-size: 15px;
+      font-weight: 600;
+      line-height: 100%;
+      color: rgba(255, 255, 255, 1);
+      text-decoration: none;
+
+      background-color: rgba(32, 96, 246, 1);
+
+      @include tablet {
+        align-self: flex-start;
+        width: 264px;
+      }
+    }
+  }
+}
