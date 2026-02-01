@@ -17,7 +17,8 @@
     @include s-desktop {
       gap: 85px;
       width: 845px;
-      padding: 151px 0 186px;
+      height: auto;
+      padding: 0 0 186px;
     }
   }
 
@@ -64,7 +65,11 @@
       justify-content: center;
 
       width: auto;
-      height: 516px;
+      height: auto;
+    }
+
+    @include desktop-1600 {
+      gap: 30px;
     }
   }
 }
@@ -92,8 +97,13 @@
 
     @include s-desktop {
       width: 292px;
-      height: 494px;
+      height: 456px;
       margin: 0;
+    }
+
+    @include desktop-1600 {
+      width: 362px;
+      height: 494px;
     }
 
     &-frame-container {
@@ -110,6 +120,11 @@
       @include s-desktop {
         width: 196px;
         height: 196px;
+      }
+
+      @include desktop-1600 {
+        width: 250px;
+        height: 250px;
       }
     }
 
@@ -167,6 +182,24 @@
       }
     }
 
+    @include desktop-1600 {
+      &-frame {
+        z-index: 1;
+        width: 100px;
+        height: 140px;
+      }
+
+      &-frameL {
+        top: 10px;
+        left: 20px;
+      }
+
+      &-frameR {
+        right: 20px;
+        bottom: 10px;
+      }
+    }
+
     &-photo-container {
       position: absolute;
       z-index: 2;
@@ -185,6 +218,11 @@
       @include s-desktop {
         width: 110px;
         height: 110px;
+      }
+
+      @include desktop-1600 {
+        width: 140px;
+        height: 140px;
       }
     }
 
@@ -228,7 +266,7 @@
     &-name-container {
       display: flex;
       flex-direction: column;
-      gap: 4px;
+      gap: 5px;
       align-items: center;
     }
   }

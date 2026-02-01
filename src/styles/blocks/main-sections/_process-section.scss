@@ -22,10 +22,16 @@
   }
 
   @include s-desktop {
-    gap: 0;
-    width: 918px;
-    height: 940px;
+    flex-direction: row;
+    width: auto;
+    height: 980px;
+    gap: 176px;
     padding: 251px 0 151px;
+  }
+
+  @include desktop-1600 {
+    gap: 226px;
+    padding: 251px 0 148px;
   }
 
   &__services {
@@ -41,10 +47,14 @@
     }
 
     @include s-desktop {
-      transform: translateY(-50%);
       gap: 20px;
       align-self: flex-end;
       width: 458px;
+    }
+
+    @include desktop-1600 {
+      width: 558px;
+      gap: 30px;
     }
   }
 
@@ -69,6 +79,10 @@
 
     @include tablet {
       width: 240px;
+    }
+
+    @include s-desktop {
+      width: 260px;
     }
   }
 
@@ -115,6 +129,11 @@
           box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12);
         }
       }
+    }
+
+    @include desktop-1600 {
+      width: 264px;
+      height: 264px;
     }
 
     &-number-container {
