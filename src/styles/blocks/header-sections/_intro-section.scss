@@ -3,13 +3,14 @@
 .header {
   &__intro {
     position: relative;
-
     overflow: hidden;
+    z-index: 1;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
 
-    width: 100%;
+    width: auto;
     height: auto;
     min-height: 390px;
     border-radius: 30px;
@@ -27,8 +28,6 @@
     }
 
     @include s-desktop {
-      z-index: 1;
-
       grid-column: 7 / -1;
 
       width: 100%;
@@ -43,6 +42,7 @@
     }
 
     @include desktop-2560 {
+      max-width: 1600px;
       grid-column: 14 / -1;
       background-image: url(../images/header/zegarek-2560.jpg);
     }
@@ -94,8 +94,6 @@
     }
 
     @include s-desktop {
-      z-index: 2;
-
       flex-direction: row;
       gap: 24px;
       align-items: center;
