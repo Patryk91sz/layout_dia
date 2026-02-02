@@ -42,6 +42,11 @@
       background-image: url(../images/header/zegarek-1600.jpg);
     }
 
+    @include desktop-2560 {
+      grid-column: 14 / -1;
+      background-image: url(../images/header/zegarek-2560.jpg);
+    }
+
     &-description {
       display: flex;
       flex-direction: column;

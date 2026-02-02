@@ -30,4 +30,9 @@
     height: 900px;
     padding-top: 180px;
   }
+
+  @include desktop-1600 {
+    grid-template-columns: repeat(12, 74px);
+    column-gap: 24px;
+  }
 }

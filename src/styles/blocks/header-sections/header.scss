@@ -61,4 +61,8 @@
     gap: 20px;
     height: 786px;
   }
+
+  @include desktop-2560 {
+    grid-template-columns: repeat(24, minmax(87px, 1fr));
+  }
 }

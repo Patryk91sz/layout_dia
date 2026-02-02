@@ -25,6 +25,11 @@
     padding: 48px 227px 38px;
   }
 
+  @include desktop-2560 {
+    grid-column: 1 / -1;
+    padding: 48px 707px 38px;
+  }
+
   &__logo {
     width: 45px;
     height: 26px;
