@@ -124,32 +124,106 @@
       </section>
 
       <section class="header__intro">
+        <input type="radio" name="intro-slider"
+        id="slide1" checked>
+        <input type="radio" name="intro-slider"
+        id="slide2">
+        <input type="radio" name="intro-slider"
+        id="slide3">
+        <input type="radio" name="intro-slider"
+        id="slide4">
+        <div class="header__slides">
+          <div class="header__slide slide--1"></div>
+          <div class="header__slide slide--2"></div>
+          <div class="header__slide slide--3"></div>
+          <div class="header__slide slide--4"></div>
+        </div>
         <div class="header__slider">
           <div class="header__arrows">
-            <button
-              class="header__arrows-arrow arrow--prev"
-              type="button"
-            >
-              <img
-                width="6"
-                height="9"
-                class="header__arrows-icon"
-                src="src/images/slider/black left.svg"
-                alt="Previous slide"
-              />
-            </button>
-            <button
-              class="header__arrows-arrow arrow--next"
-              type="button"
-            >
-              <img
-                width="6"
-                height="9"
-                class="header__arrows-icon"
-                src="src/images/slider/black right.svg"
-                alt="Next slide"
-              />
-            </button>
+
+            <div class="header__arrows-wrapper arrows--1">
+              <label for="slide4" class="header__arrows-arrow arrow--prev">
+                <img
+                  width="6"
+                  height="9"
+                  class="header__arrows-icon"
+                  src="src/images/slider/black left.svg"
+                  alt="Previous slide"
+                />
+              </label>
+              <label for="slide2" class="header__arrows-arrow arrow--next">
+                <img
+                  width="6"
+                  height="9"
+                  class="header__arrows-icon"
+                  src="src/images/slider/black right.svg"
+                  alt="Next slide"
+                />
+              </label>
+            </div>
+
+            <div class="header__arrows-wrapper arrows--2">
+              <label for="slide1" class="header__arrows-arrow arrow--prev">
+                <img
+                  width="6"
+                  height="9"
+                  class="header__arrows-icon"
+                  src="src/images/slider/black left.svg"
+                  alt="Previous slide"
+                />
+              </label>
+              <label for="slide3" class="header__arrows-arrow arrow--next">
+                <img
+                  width="6"
+                  height="9"
+                  class="header__arrows-icon"
+                  src="src/images/slider/black right.svg"
+                  alt="Next slide"
+                />
+              </label>
+            </div>
+
+            <div class="header__arrows-wrapper arrows--3">
+              <label for="slide2" class="header__arrows-arrow arrow--prev">
+                <img
+                  width="6"
+                  height="9"
+                  class="header__arrows-icon"
+                  src="src/images/slider/black left.svg"
+                  alt="Previous slide"
+                />
+              </label>
+              <label for="slide4" class="header__arrows-arrow arrow--next">
+                <img
+                  width="6"
+                  height="9"
+                  class="header__arrows-icon"
+                  src="src/images/slider/black right.svg"
+                  alt="Next slide"
+                />
+              </label>
+            </div>
+
+            <div class="header__arrows-wrapper arrows--4">
+              <label for="slide3" class="header__arrows-arrow arrow--prev">
+                <img
+                  width="6"
+                  height="9"
+                  class="header__arrows-icon"
+                  src="src/images/slider/black left.svg"
+                  alt="Previous slide"
+                />
+              </label>
+              <label for="slide1" class="header__arrows-arrow arrow--next">
+                <img
+                  width="6"
+                  height="9"
+                  class="header__arrows-icon"
+                  src="src/images/slider/black right.svg"
+                  alt="Next slide"
+                />
+              </label>
+            </div>
           </div>
           <div class="header__intro-description">
             <p class="header__intro-title">INtro</p>

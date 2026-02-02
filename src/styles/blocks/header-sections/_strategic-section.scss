@@ -17,13 +17,17 @@
     }
 
     @include s-desktop {
-      grid-column: 1 / 5;
+      grid-column: 1 / 4;
       gap: 83px;
       padding-left: 54px;
     }
 
     @include desktop-1600 {
       padding-left: 227px;
+    }
+
+    @include desktop-2560 {
+      padding-left: 707px;
     }
 
     &-title {
@@ -84,6 +88,8 @@
           gap: 32px;
           justify-content: center;
           justify-self: center;
+
+          width: 390px;
           height: 355px;
         }
       }

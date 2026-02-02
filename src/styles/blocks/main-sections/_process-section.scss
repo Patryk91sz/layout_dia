@@ -23,9 +23,10 @@
 
   @include s-desktop {
     flex-direction: row;
+    gap: 176px;
+
     width: auto;
     height: 980px;
-    gap: 176px;
     padding: 251px 0 151px;
   }
 

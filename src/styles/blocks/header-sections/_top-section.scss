@@ -13,11 +13,11 @@
   }
 
   @include s-desktop {
-    width: auto;
-    align-items: center;
     grid-column: 1 / -1;
-
+    align-items: center;
     justify-content: space-between;
+
+    width: auto;
     padding: 48px 54px;
   }
 
@@ -25,11 +25,15 @@
     padding: 48px 227px 38px;
   }
 
+  @include desktop-2560 {
+    grid-column: 1 / -1;
+    padding: 48px 707px 38px;
+  }
+
   &__logo {
     width: 45px;
     height: 26px;
     border: none;
-
     background-color: transparent;
 
     &-icon {
@@ -112,6 +116,7 @@
 
       width: auto;
       height: auto;
+
       list-style: none;
 
       @include s-desktop {

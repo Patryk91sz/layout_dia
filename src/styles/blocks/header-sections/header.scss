@@ -25,6 +25,10 @@
     height: 50px;
 
     background-color: rgba(242, 246, 250, 1);
+
+    @include s-desktop {
+      width: 50px;
+    }
   }
 
   @include tablet {
@@ -41,24 +45,14 @@
     justify-content: center;
 
     height: 795px;
-
-    &::before {
-      content: '';
-
-      position: absolute;
-      z-index: 0;
-      right: 0;
-      bottom: 0;
-
-      width: 50px;
-      height: 50px;
-
-      background-color: rgba(242, 246, 250, 1);
-    }
   }
 
   @include desktop-1600 {
     gap: 20px;
     height: 786px;
+  }
+
+  @include desktop-2560 {
+    grid-template-columns: repeat(24, minmax(87px, 1fr));
   }
 }
