@@ -32,11 +32,6 @@
     background-position: 30% 40%;
   }
 
-  @include desktop-2560 {
-    background-image: url(../images/Shapes-2560.png);
-    background-position: 55% 40%;
-  }
-
   &__title {
     @include tablet {
       width: 450px;
