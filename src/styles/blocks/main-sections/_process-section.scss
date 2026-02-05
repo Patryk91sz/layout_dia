@@ -15,7 +15,7 @@
   @include tablet {
     gap: 56px;
 
-    width: 558px;
+    width: 560px;
     margin: 0 auto;
     padding: 0;
     padding: 148px 0;
@@ -23,15 +23,15 @@
 
   @include s-desktop {
     flex-direction: row;
-    gap: 176px;
+    justify-content: space-between;
 
-    width: auto;
+    width: 918px;
     height: 980px;
     padding: 251px 0 151px;
   }
 
   @include desktop-1600 {
-    gap: 226px;
+    width: 1148px;
     padding: 251px 0 148px;
   }
 
