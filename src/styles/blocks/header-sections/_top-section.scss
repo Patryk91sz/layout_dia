@@ -185,3 +185,8 @@
     }
   }
 }
+
+body:has(.top__menu:target) {
+  overflow: hidden;
+  height: 100vh;
+}

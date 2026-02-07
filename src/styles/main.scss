@@ -19,3 +19,18 @@
 @use './blocks/footer-sections/form-section';
 @use './blocks/footer-sections/contact-section';
 @use './blocks/footer-sections/footer-menu-section';
+
+@include s-desktop {
+  a,
+  button {
+    cursor: pointer;
+    transition:
+      transform 0.3s ease,
+      background-color 0.3s ease,
+      color 0.3s ease;
+    transform-origin: center center;
+    &:hover {
+      transform: scale(1.2);
+    }
+  }
+}

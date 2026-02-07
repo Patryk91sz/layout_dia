@@ -63,10 +63,15 @@
     }
   }
 
-  &__link {
-    @include s-desktop {
-      display: inline-block;
-      width: auto;
-    }
-  }
+  // &__link {
+  //   @include s-desktop {
+  //     display: inline-block;
+  //     width: auto;
+  //   }
+  // }
+}
+
+.menu-link {
+  display: inline-block;
+  width: auto;
 }
