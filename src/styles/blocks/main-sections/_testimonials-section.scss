@@ -16,9 +16,13 @@
 
     @include s-desktop {
       gap: 85px;
-      width: 845px;
+      width: 916px;
       height: auto;
       padding: 0 0 186px;
+    }
+
+    @include desktop-1600 {
+      width: 1146px;
     }
   }
 
