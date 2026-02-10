@@ -13,23 +13,7 @@
 
   background-color: rgba(44, 44, 44, 1);
 
-    &::before {
-    content: '';
-
-    position: absolute;
-    z-index: 0;
-    right: 0;
-    bottom: 0;
-
-    width: 100%;
-    height: 50px;
-
-    background-color: rgba(242, 246, 250, 1);
-
-    @include s-desktop {
-      width: 50px;
-    }
-  }
+  border-radius: 0 0 30px 30px;
 
   @include tablet {
     gap: 56px;
