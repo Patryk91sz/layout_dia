@@ -2,7 +2,7 @@
 
 /* stylelint-disable selector-max-id */
 
-.header__intro {
+.header {
   &__slider {
     position: absolute;
     bottom: 0;
@@ -11,10 +11,10 @@
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    gap: 16px;
 
     box-sizing: border-box;
     width: 280px;
-    height: 116px;
     margin: 0 20px 24px;
     border-radius: 12px;
 
@@ -22,7 +22,7 @@
     cursor: pointer;
 
     @include tablet {
-      padding: 0 41px;
+      margin: 0 41px 32px;
     }
 
     @include s-desktop {
@@ -32,12 +32,11 @@
 
       width: 100%;
       height: 68px;
-      margin-bottom: 48px;
-      padding: 0 78px;
+      margin: 0 0 48px 78px;
     }
 
     @include desktop-1600 {
-      padding: 0 48px;
+      margin: 48px;
     }
   }
 }
